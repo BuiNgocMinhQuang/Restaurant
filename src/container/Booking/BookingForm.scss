@@ -1,0 +1,161 @@
+.app-booking {
+  padding: 2rem 4rem;
+  border: 1px solid var(--color-golden);
+  background: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.logoIRight {
+  position: absolute;
+  top: -8rem;
+  right: -8rem;
+  width: 7rem;
+  height: 7rem;
+  z-index: 100;
+  overflow: hidden;
+  object-fit: cover;
+}
+.app-booking-heading {
+  text-align: center;
+}
+
+.app-booking-input {
+  flex-direction: row;
+  margin: 3rem 0;
+}
+
+.app-booking-input {
+  color: var(--color-white);
+  select {
+    width: 250px;
+    border: 1px solid var(--color-golden);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--font-base);
+    color: var(--color-white);
+    margin-right: 2rem;
+    padding: 0.75rem 1rem;
+    background: var(--color-black);
+  }
+  .date-select {
+    .react-datetime-picker__wrapper {
+      border: none;
+      position: relative;
+    }
+
+    .react-datetime-picker__inputGroup {
+      width: 250px;
+      border: 1px solid var(--color-golden);
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: var(--font-base);
+      color: var(--color-white);
+      margin-right: 2rem;
+      padding: 0.75rem 1rem;
+      background: var(--color-black);
+      .react-datetime-picker__inputGroup__input {
+        min-width: 1rem;
+        cursor: pointer;
+      }
+
+      input {
+        width: 100%;
+        color: var(--color-white);
+        padding: 0 5px;
+      }
+    }
+    .react-datetime-picker__clear-button {
+      position: absolute;
+      height: 44px;
+      border-radius: 0 5px 5px 0px;
+      right: 2rem;
+      background-color: var(--color-golden);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.app-booking-input button {
+  width: max-content;
+}
+
+@media screen and (min-width: 2000px) {
+  .app-booking {
+    padding: 4rem 15rem;
+    .app-booking-input {
+      select {
+        width: 350px;
+      }
+
+      .react-datetime-picker__inputGroup {
+        width: 350px;
+
+        .react-datetime-picker__inputGroup__input {
+          min-width: 1rem;
+          cursor: pointer;
+        }
+
+        input {
+          width: 100%;
+          color: var(--color-white);
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .app-booking {
+    padding: 4rem 15rem;
+    .app-booking-input {
+      select {
+        width: 250px;
+      }
+
+      .react-datetime-picker__inputGroup {
+        width: 250px;
+
+        .react-datetime-picker__inputGroup__input {
+          min-width: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app-booking {
+    padding: 0;
+    .app-booking-input {
+      flex-wrap: wrap;
+      select {
+        width: 250px;
+      }
+
+      .react-datetime-picker__inputGroup {
+        margin-right: 0;
+        width: 250px;
+      }
+      .react-datetime-picker__clear-button {
+        right: 0;
+      }
+    }
+  }
+  .logoIRight {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .app-booking {
+    display: none;
+  }
+  .logoIRight {
+    display: none;
+  }
+}
