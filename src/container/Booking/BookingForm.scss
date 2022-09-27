@@ -110,49 +110,6 @@
 
 @media screen and (max-width: 990px) {
   .app-booking {
-    padding: 4rem 15rem;
-    .app-booking-input {
-      select {
-        width: 250px;
-      }
-
-      .react-datetime-picker__inputGroup {
-        width: 250px;
-
-        .react-datetime-picker__inputGroup__input {
-          min-width: 1rem;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .app-booking {
-    padding: 0;
-    .app-booking-input {
-      flex-wrap: wrap;
-      select {
-        width: 250px;
-      }
-
-      .react-datetime-picker__inputGroup {
-        margin-right: 0;
-        width: 250px;
-      }
-      .react-datetime-picker__clear-button {
-        right: 0;
-      }
-    }
-  }
-  .logoIRight {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .app-booking {
     display: none;
   }
   .logoIRight {
